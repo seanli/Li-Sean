@@ -1,0 +1,33 @@
+# Project Files #
+.project
+.pydevproject
+.settings
+*.komodoproject
+
+# Static Files #
+static/
+
+# Media Files #
+media/
+
+# Index Files #
+indexes/
+
+# Setting Files #
+settings_extra.py
+
+# Install Files #
+tools/src/
+tools/build/
+
+# Compiled Files #
+*.pyc
+
+# Generated Files #
+lisean/assets/js/dajaxice.core.js
+
+# Log Files #
+*.log
+
+# Mac Files #
+.DS_Store

@@ -1,0 +1,28 @@
+[
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "Elesant", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-04-03T21:00:09.352Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$qE1mKRCpBUM6$85YRFlrP8Cbtw1lx0CHokcuVsqte9afslazBo7pJUwg=", 
+            "email": "lishang106@gmail.com", 
+            "date_joined": "2012-04-03T21:00:09.352Z"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "example.com", 
+            "name": "example.com"
+        }
+    }
+]
