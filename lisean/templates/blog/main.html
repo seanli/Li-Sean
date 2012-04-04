@@ -6,14 +6,16 @@
 
 {% block content %}
 
-<div class="page-header">
-  <h1>Blog</h1>
-</div>
 <div class="row-fluid">
-  {% for p in posts %}
-  <div class="well well-small">
-    <a href="{% url blog %}{{ p.id }}"> {{ p.title }}</a>
+  {% for d in posts_data %}
+  <div class="page-header">
+    <h1>{{ d.post.title }}</h1>
+    <div class="vertical-space"></div>
+    <h5>Author: {% if d.post.author %}{{ d.post.author.get_full_name }}{% else %}Unknown{% endif %}</h5>
+    <h6>{{ d.post.created_time }}</h6>
   </div>
+  {{ d.parsed|safe }}
+  <hr />
   {% endfor %}
 </div>
 
