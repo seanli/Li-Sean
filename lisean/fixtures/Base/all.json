@@ -4,17 +4,17 @@
         "model": "auth.user", 
         "fields": {
             "username": "Elesant", 
-            "first_name": "", 
-            "last_name": "", 
+            "first_name": "Sean", 
+            "last_name": "Li", 
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-04-03T21:00:09.352Z", 
+            "last_login": "2012-04-04T21:32:15Z", 
             "groups": [], 
             "user_permissions": [], 
             "password": "pbkdf2_sha256$10000$qE1mKRCpBUM6$85YRFlrP8Cbtw1lx0CHokcuVsqte9afslazBo7pJUwg=", 
             "email": "lishang106@gmail.com", 
-            "date_joined": "2012-04-03T21:00:09.352Z"
+            "date_joined": "2012-04-03T21:00:09Z"
         }
     }, 
     {
@@ -23,6 +23,24 @@
         "fields": {
             "domain": "example.com", 
             "name": "example.com"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-04T21:24:10.108Z", 
+            "app_name": "core", 
+            "migration": "0001_initial"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-04T21:47:11.757Z", 
+            "app_name": "blog", 
+            "migration": "0001_initial"
         }
     }
 ]

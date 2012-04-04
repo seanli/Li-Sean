@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load base_extra %}
+
+{% block title %}{{ SITE_NAME }} - Blog{% endblock %}
+
+{% block content %}
+
+<div class="row-fluid">
+    <div class="page-header">
+      <h1>{{ post.title }}</h1>
+      <div class="vertical-space"></div>
+      <h5>Author: {% if post.author %}{{ post.author.get_full_name }}{% else %}Unknown{% endif %}</h5>
+    </div>
+    {{ parsed|safe }}
+</div>
+
+{% endblock %} 

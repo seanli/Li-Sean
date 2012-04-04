@@ -88,6 +88,7 @@ INSTALLED_APPS = (
     'compressor',
     'core',
     'core.templatetags',
+    'blog',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -104,7 +105,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 # For core.context_processors.settings
 TEMPLATE_VISIBLE_SETTINGS = (
     'DEBUG',
-    'BRAND_NAME',
+    'SITE_NAME',
     'ENVIRONMENT',
 )
 
@@ -170,4 +171,4 @@ DAJAXICE_JS_DOCSTRINGS = True
 
 COMMANDS_ROOT = os.path.join(PROJECT_ROOT, 'core/management/commands/'),
 
-BRAND_NAME = 'Sean Li'
+SITE_NAME = 'Sean Li'

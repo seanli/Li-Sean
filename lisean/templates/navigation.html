@@ -4,11 +4,14 @@
   <div class="navbar-inner">
     <div class="container-fluid">
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-      <a class="brand" href="{% url home %}">{{ BRAND_NAME }}</a>
+      <a class="brand" href="{% url home %}">{{ SITE_NAME }}</a>
       <div class="nav-collapse">
         <ul class="nav">
           <li class="{% active request 'home' %}">
             <a href="{% url home %}"><i class="icon-home icon-white"></i> Home</a>
+          </li>
+          <li class="{% active request '(blog)' %}">
+            <a href="{% url blog %}"><i class="icon-comment icon-white"></i> Blog</a>
           </li>
         </ul>
       </div>
