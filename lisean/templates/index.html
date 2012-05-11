@@ -1,12 +1,45 @@
 {% extends "base.html" %}
 
-{% block title %}{{ SITE_NAME }} - Blog{% endblock %}
+{% block title %}{{ SITE_NAME }}{% endblock %}
 
 {% block content %}
-<div class="page-header">
-  <h1>Sean Li</h1>
-</div>
 <div class="row-fluid">
-  <p>Welcome to my personal website! It is still under development.</p>
+  <div class="span3">
+    <a href="#" class="thumbnail">
+      <img src="{{ STATIC_URL }}img/portrait.jpg" alt="">
+    </a>
+    <div class="vertical-space"></div>
+    <h2>Resume</h2>
+    <a href="http://dl.dropbox.com/u/5188621/Resume.html" target="_blank" class="btn btn-mini"><i class="icon-file"></i> <b>View Resume</b></a>
+    <a href="http://dl.dropbox.com/u/5188621/Resume%20-%20Printable.pdf" target="_blank" class="btn btn-mini"><i class="icon-print"></i> <b>Printable Version</b></a>
+  </div>
+  <div class="span9">
+    <div class="page-header">
+      <h1><span class="title">Sean Li</span></h1>
+      <h6>Software Engineer</h6>
+    </div>
+    <div class="row-fluid">
+      <h2>About Myself</h2>
+      Hi, my name is Sean Li, a fourth year software engineering student at the <b>University of Waterloo</b>.
+      I specialize in full stack <b>web development</b> and have a passion for <b>designing</b> software products.
+      Despite fitting into an engineering stereotype, I am also a Chinese pop music composer, play a variety of instruments, and love mixing myself some cocktails during free time .
+    </div>
+    <hr />
+    <div class="row-fluid">
+      <h2>Entrepreneurship</h2>
+      Initiated the <b>Schoolax</b> project. Our goal is to deliver a social platform 
+      specifically designed to enhance the academic experience of students and instructors of colleges and universities.
+      <br />
+      <a href="http://qa.schoolax.com" target="_blank" class="btn btn-mini"><i class="icon-eye-open"></i> <b>Sneak Peak Test Site</b></a>
+    </div>
+    <hr />
+    <div class="row-fluid">
+      <h2>Social Stuffs</h2>
+      <a href="http://www.facebook.com/elesant" target="_blank" class="btn btn-primary btn-small"><i class="icon-user icon-white"></i> <b>Facebook</b></a>
+      <a href="http://www.youtube.com/user/ElesantSL" target="_blank" class="btn btn-danger btn-small"><i class="icon-headphones icon-white"></i> <b>YouTube</b></a>
+      <a href="http://www.linkedin.com/pub/shang-li/2b/16/3a8" target="_blank" class="btn btn-info btn-small"><i class="icon-lock icon-white"></i> <b>LinkedIn</b></a>
+      <a href="https://github.com/Elesant" target="_blank" class="btn btn-success btn-small"><i class="icon-home icon-white"></i> <b>GitHub</b></a>
+    </div>
+  </div>
 </div>
 {% endblock %}

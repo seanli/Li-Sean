@@ -6,6 +6,11 @@
 @import "datatable.less";
 @import "backstage.less";
 
+.title {
+  font-family: "Rancho", cursive; 
+  font-size: 50px;
+}
+
 .vertical-space {
   height: @gridGutterWidth / 4;
 }
@@ -18,18 +23,19 @@
 body {
   padding-top: @navbarHeight * 2;
   padding-bottom: @navbarHeight;
-  background-image: url("../img/paper.png");
+  background-image: url("../img/wood.png");
   background-color: @white;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 15px;
 }
 body #main.container-fluid {
   margin: 0px auto;
   max-width: @gridRowWidth;
   padding: @gridGutterWidth;
-  .box-shadow(0 0px 25px fade(@gray, 50%));
-  background-image: url("../img/bg.png");
+  .box-shadow(0 0px 50px fade(@grayLight, 50%));
   background-color: @white;
-  border: solid 5px @grayLighter;
-  .border-radius(10px);
+  border: solid 5px @gray;
+  .border-radius(3px);
 }
 .navbar {
   .box-shadow(0 10px 25px fade(@gray, 50%));
